@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:./public/css/style.css ./sass/menuf.scss:./public/css/menuf.css"
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css ./sass/menuf.scss:./public/css/menuf.css ./sass/menupalette.scss:./public/css/menupalette.css"
   },
   "repository": {
     "type": "git",
