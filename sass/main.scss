@@ -59,7 +59,7 @@
     align-items: center;
     text-align: center;
     background-color: $background-colour-secondary;
-    height: 330px;
+    height: 300px;
     
     h2 {
         font-size: 30px;
@@ -91,7 +91,7 @@
     h2 {
         font-size: 30px;
         width: 90%;
-        padding-top: 40px;
+        padding-top: 35px;
     }
     &__blocTop {
         position: relative;
@@ -379,4 +379,38 @@ footer {
     }
 
 }
+
+@media (min-width: 991px) {
+    .sectionhead {
+    
+        height: 250px;
+    }
+    .sectionmiddle {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: row;
+        h2 {
+            position: absolute;
+            width: 220px;
+            padding-top: 55px;
+            top: -90px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        &__blocTop {
+            margin: 0px 20px 0px 40px;
+        }
+        &__blocMiddle {
+            margin: 20px;
+        }
+        &__blocBottom {
+            margin: 0px 40px 0px 20px;
+        }
+    }
+    .sectionbottom {
+        margin-top: 30px;
+    }
+}
+
 

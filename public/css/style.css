@@ -58,7 +58,7 @@
   align-items: center;
   text-align: center;
   background-color: #f2f2f2;
-  height: 330px;
+  height: 300px;
 }
 .sectionhead h2 {
   font-size: 30px;
@@ -87,7 +87,7 @@
 .sectionmiddle h2 {
   font-size: 30px;
   width: 90%;
-  padding-top: 40px;
+  padding-top: 35px;
 }
 .sectionmiddle__blocTop {
   position: relative;
@@ -348,6 +348,38 @@ footer p {
 footer p i {
   margin-right: 10px;
   color: white;
+}
+
+@media (min-width: 991px) {
+  .sectionhead {
+    height: 250px;
+  }
+  .sectionmiddle {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: row;
+  }
+  .sectionmiddle h2 {
+    position: absolute;
+    width: 220px;
+    padding-top: 55px;
+    top: -90px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .sectionmiddle__blocTop {
+    margin: 0px 20px 0px 40px;
+  }
+  .sectionmiddle__blocMiddle {
+    margin: 20px;
+  }
+  .sectionmiddle__blocBottom {
+    margin: 0px 40px 0px 20px;
+  }
+  .sectionbottom {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
