@@ -263,18 +263,11 @@
   margin: 5px 0px 20px 15px;
   font-size: 18px;
 }
-.sectionbottom__secondcard .iconheart {
+.sectionbottom__secondcard i {
   position: absolute;
   right: 30px;
   bottom: 35px;
   font-size: 30px;
-  color: #9356DC;
-}
-.sectionbottom__secondcard .iconpointer {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  font-size: 35px;
 }
 .sectionbottom__thirdcard {
   position: relative;
