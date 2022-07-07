@@ -87,6 +87,7 @@ main {
             }
         }
         .plats {
+            position: relative;
             background-color: white;
             border-radius: 15px;
             width: 88%;
@@ -102,6 +103,81 @@ main {
                     margin-right: 5px;
                     font-weight: bold;
                 }
+            }
+            &:hover {
+                .anim {
+                    transform: scaleX(1);
+
+                }
+                .anim i {
+                    transform: rotate(0deg)
+                }
+            }
+            .anim {
+                content: "fa-solid fa-circle-check";
+                display: flex;
+                border-radius: 0px 15px 15px 0px;
+                width: 100px;              
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                transform-origin: right;
+                transform:scaleX(0);
+                background-color: $colour-tertiary;
+                transition: transform 250ms ease-in-out;
+
+                i {
+                    font-size: 35px;
+                    color: white;
+                    transform:rotate(-360deg);
+                   transition: transform 300ms ease-in-out;
+                }
+            }
+            }
+        #plat1 {
+            animation : apparition 1s ease-out;
+        }
+        #plat2 {
+            animation : apparition 1.3s ease-out;
+        }
+        #plat3 {
+            animation : apparition 1.6s ease-out;
+        }
+        #plat4 {
+            animation : apparition 1.8s ease-out;
+        }
+        #plat5 {
+            animation : apparition 2s ease-out;
+        }
+        #plat6 {
+            animation : apparition 2.2s ease-out;
+        }
+        #plat7 {
+            animation : apparition 2.4s ease-out;
+        }
+        #plat8 {
+            animation : apparition 2.6s ease-out;
+        }
+        #plat9 {
+            animation : apparition 2.8s ease-out;
+        }
+        @keyframes apparition {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            45% {
+                opacity: 0;
+            }
+            65% {              
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0px);
             }
         }
     }

@@ -83,6 +83,7 @@ main section .title span {
   border-color: #99E2D0;
 }
 main section .plats {
+  position: relative;
   background-color: white;
   border-radius: 15px;
   width: 88%;
@@ -98,6 +99,77 @@ main section .plats p {
 main section .plats p span {
   margin-right: 5px;
   font-weight: bold;
+}
+main section .plats:hover .anim {
+  transform: scaleX(1);
+}
+main section .plats:hover .anim i {
+  transform: rotate(0deg);
+}
+main section .plats .anim {
+  content: "fa-solid fa-circle-check";
+  display: flex;
+  border-radius: 0px 15px 15px 0px;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  transform: scaleX(0);
+  background-color: #99E2D0;
+  transition: transform 250ms ease-in-out;
+}
+main section .plats .anim i {
+  font-size: 35px;
+  color: white;
+  transform: rotate(-360deg);
+  transition: transform 300ms ease-in-out;
+}
+main section #plat1 {
+  animation: apparition 1s ease-out;
+}
+main section #plat2 {
+  animation: apparition 1.3s ease-out;
+}
+main section #plat3 {
+  animation: apparition 1.6s ease-out;
+}
+main section #plat4 {
+  animation: apparition 1.8s ease-out;
+}
+main section #plat5 {
+  animation: apparition 2s ease-out;
+}
+main section #plat6 {
+  animation: apparition 2.2s ease-out;
+}
+main section #plat7 {
+  animation: apparition 2.4s ease-out;
+}
+main section #plat8 {
+  animation: apparition 2.6s ease-out;
+}
+main section #plat9 {
+  animation: apparition 2.8s ease-out;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  45% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 main .btn {
   display: flex;
