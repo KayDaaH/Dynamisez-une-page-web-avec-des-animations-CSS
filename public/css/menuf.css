@@ -91,14 +91,24 @@ main section .plats {
   box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.101);
   margin-bottom: 20px;
 }
-main section .plats p {
+main section .plats .description {
+  box-sizing: border-box;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
+  transition: width 5s, background-color 2s;
 }
-main section .plats p span {
+main section .plats .description p {
+  display: block;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section .plats .description .price {
   margin-right: 5px;
   font-weight: bold;
+  margin-left: 2px;
 }
 main section .plats:hover .anim {
   transform: scaleX(1);
@@ -106,11 +116,14 @@ main section .plats:hover .anim {
 main section .plats:hover .anim i {
   transform: rotate(0deg);
 }
+main section .plats:hover .description {
+  width: 80%;
+  background-color: red;
+}
 main section .plats .anim {
-  content: "fa-solid fa-circle-check";
   display: flex;
   border-radius: 0px 15px 15px 0px;
-  width: 100px;
+  width: 20%;
   height: 100%;
   position: absolute;
   top: 0px;
